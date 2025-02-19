@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Download - YouTube Downloader{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="converter-box">
+        <h1><i class="fab fa-youtube"></i> YouTube Downloader</h1>
+        <p>Convert your favorite YouTube videos to MP3 or MP4</p>
+        
+        <div class="format-selector">
+            <label>
+                <input type="radio" name="format" value="mp3" checked> MP3
+            </label>
+            <label>
+                <input type="radio" name="format" value="mp4"> MP4
+            </label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="youtubeUrl" placeholder="Paste YouTube URL here...">
+            <button onclick="convertVideo()">Convert</button>
+        </div>
+
+        <div class="result" id="result">
+            <!-- Results will appear here -->
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Home - YouTube Downloader{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="converter-box">
+        <h1><i class="fab fa-youtube"></i> Welcome to YouTube Downloader</h1>
+        <p>Download your favorite YouTube videos in MP3 or MP4 format</p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <i class="fas fa-music fa-2x"></i>
+                <h3>MP3 Download</h3>
+                <p>Extract high-quality audio from any YouTube video</p>
+            </div>
+            
+            <div class="feature-item">
+                <i class="fas fa-video fa-2x"></i>
+                <h3>MP4 Download</h3>
+                <p>Download videos in high resolution format</p>
+            </div>
+            
+            <div class="feature-item">
+                <i class="fas fa-bolt fa-2x"></i>
+                <h3>Fast Conversion</h3>
+                <p>Quick and efficient processing of your videos</p>
+            </div>
+        </div>
+        
+        <div class="cta-button">
+            <a href="{{ url_for('download') }}" class="btn-primary">
+                Start Converting <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %} 
